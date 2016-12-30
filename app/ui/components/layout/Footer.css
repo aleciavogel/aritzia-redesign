@@ -1,0 +1,75 @@
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.links {
+  background: #f7f7f7;
+  padding: 80px 3.5% 60px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.links > div span,
+.need-to-talk > div span {
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 15px 0px 0px;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+.links ul li {
+  line-height: 1.6em;
+  padding-bottom: 6px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #999;
+  line-height: 18px;
+}
+
+.links ul li a:hover {
+  color: #333;
+  border-bottom: 1px solid #999;
+}
+
+.links p,
+.need-to-talk p {
+  color: #999;
+  line-height: 18px;
+}
+
+.need-to-talk {
+  background: #f7f7f7;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0px 3.5% 60px;
+}
+
+.left {
+  max-width: 380px;
+}
+
+.left a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 1px;
+}
+
+.left a:hover {
+  color: #333;
+  border-bottom: solid 1px #999;
+}
