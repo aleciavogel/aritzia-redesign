@@ -16,7 +16,7 @@ class ProductMainImage extends Component {
           transitionEnter={true}
           transitionEnterTimeout={300}
           transitionLeave={true}
-          transitionLeaveTimeout={300}>
+          transitionLeaveTimeout={400}>
           <img className="current-image" src={this.props.currentImage} key={this.props.currentImage} />
         </ReactCSSTransitionGroup>
       </div>

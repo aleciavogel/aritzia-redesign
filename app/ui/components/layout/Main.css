@@ -35,10 +35,10 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 .fade-leave.fade-leave-active {
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }

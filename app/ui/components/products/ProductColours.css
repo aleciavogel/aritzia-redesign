@@ -1,0 +1,48 @@
+.colour-swatches {
+  
+}
+
+.colour-swatches ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.colour-swatches ul .active-swatch {
+  border: solid 2px #000;
+}
+
+.colour-swatches ul .active-swatch span {
+  border: solid 3px white;
+}
+
+.colour-swatches ul li {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.colour-swatches ul li:hover {
+  border: solid 2px #000;
+}
+
+.colour-swatches ul li span {
+  display: block;
+  border: solid 3px transparent;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.colour-swatches ul li:hover span {
+  border: solid 3px white;
+}

@@ -11,7 +11,7 @@ const product = {
   collection: 'Wilfred Free',
   name: 'Faretta Sweater',
   id: 62947,
-  colors: [
+  colours: [
     {
       name: 'Black',
       swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_1274_sw.jpg'
