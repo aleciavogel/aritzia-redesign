@@ -11,7 +11,10 @@ class Header extends Component {
           <div>
             <ul>
               <li className="country-select">
-                <a href="#">Canada ($CAD)</a>              
+                <span className="ar-icon cdn-flag"></span>
+                <a href="#">
+                  Canada ($CAD)
+                </a>              
               </li>
               <li className="language-select"><a href="#">FR</a></li>
               <li className="store-select"><a href="#">Store Locator</a></li>
@@ -20,7 +23,7 @@ class Header extends Component {
           </div>
           <div>
             <ul>
-              <li><a href="#">Search</a></li>
+              <li><a href="#">Search <span className="ar-icon" id="search"></span></a></li>
               <li><a href="#">Cart</a></li>
               <li><a href="#">Sign In</a></li>
             </ul>

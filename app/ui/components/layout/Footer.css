@@ -16,10 +16,6 @@
 .footer-cta .ar-icon {
   height: 35px;
   width: 35px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background: url('http://localhost:8080/app/public/images/interface-sprite.png');
-  text-indent: -99999px;
   display: block;
   float: none;
   margin: 0 auto;
@@ -99,6 +95,7 @@
   color: #222;
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: .1em;
 }
 
 .links ul {
@@ -122,6 +119,7 @@
   padding-bottom: 0px;
   display: inline-block;
   position: relative;
+  letter-spacing: 0.06em;
 }
 
 .links ul li a:after {
@@ -147,10 +145,56 @@
   height: 1px;
 }
 
+.mailing-list-signup {
+  width: 45%;
+}
+
+.links input {
+  width: 60%;
+  background: transparent;
+  border: 0 none;
+  border-bottom: solid 2px #999;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  padding: 4px 0;
+  color: #999;
+  outline: 0;
+  line-height: 1.6em;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: auto;
+  user-select: text;
+  font-weight: 400;
+  height: 40px;
+  position: relative;
+}
+
+.links button {
+  font-size: 0.9em;
+  letter-spacing: .1em;
+  border: solid 2px #ccc;
+  width: 35%;
+  float: right;
+  padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: 0;
+  line-height: 1.7em;
+  height: 40px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.links button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .links p,
 .need-to-talk p {
   color: #999;
   line-height: 18px;
+  letter-spacing: .06em;
 }
 
 .need-to-talk {
@@ -166,7 +210,7 @@
 }
 
 .left {
-  max-width: 380px;
+  max-width: 400px;
 }
 
 .left a {

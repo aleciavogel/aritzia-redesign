@@ -6,11 +6,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  letter-spacing: .06em;
 }
 
 .utilities ul {
   list-style-type: none;
-  font-size: 0.7em;
+  font-size: 0.65em;
   margin: 0;
   padding: 0;
 }
@@ -18,12 +19,33 @@ header {
 .utilities ul li {
   list-style: none;
   border-right: 1px solid #dcddde;
-  float: left;
   white-space: nowrap;
   padding: 3px 10px 0px;
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
+  display: inline-block;
+}
+
+.utilities ul li .cdn-flag {
+  margin-right: 10px;
+  height: 11px;
+  width: 15px;
+  display: inline-block;
+  background-position: -10px -1552px;
+  line-height: 11px;
+  margin-top: -2px;
+  vertical-align: top;
+}
+
+.utilities #search {
+  display: inline-block;
+  margin-top: -2px;
+  line-height: 0.65em;
+  width: 13px;
+  height: 13px;
+  background-position: -9px -1446px;
+  float: right;
 }
 
 .utilities ul li a {
@@ -74,9 +96,10 @@ header {
 }
 
 nav {
-  font-size: 1.25em;
+  font-size: 1.2em;
   text-align: center;
   width: 100%;
+  letter-spacing: 0.04em;
 }
 
 nav ul {

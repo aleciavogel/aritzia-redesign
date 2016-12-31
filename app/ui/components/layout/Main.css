@@ -9,3 +9,11 @@ header nav,
 footer {
   font-family: 'Lato', sans-serif;
 }
+
+.ar-icon {
+  overflow: hidden;
+  display: inline-block;
+  background: url('http://localhost:8080/app/public/images/interface-sprite.png');
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}

@@ -57,11 +57,11 @@ class Footer extends Component {
                 <li><a href="#">#ThanksToYou</a></li>
               </ul>
             </div>
-            <div>
+            <div className="mailing-list-signup">
               <span>Join Aritzia's Mailing List</span>
               <p>Insider info on sales, new arrivals, and more good stuff.</p>
               <form>
-                <input type="text" /><button type="submit">Submit</button>
+                <input type="email" placeholder="Enter your email"/><button type="submit">Sign Up</button>
               </form>
             </div>
           </div>
@@ -71,7 +71,7 @@ class Footer extends Component {
           <div className="footer-container">
             <div className="left">
               <span>Need to talk?</span>
-              <p>Help us, help you! Give us a call at <a href="tel:1-855-274-8942">1-855-ARITZIA (274-8942)</a> and let's chat - we're always here to help.</p>
+              <p>Help us, help you! Give us a call at <a href="tel:1-855-274-8942">1-855-ARITZIA (274-8942)</a> and let's chat—we're always here to help.</p>
             </div>
             <div className="right">
               <ul>
