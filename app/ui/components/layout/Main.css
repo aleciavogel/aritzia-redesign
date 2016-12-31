@@ -17,3 +17,28 @@ footer {
   background-repeat: no-repeat;
   text-indent: -99999px;
 }
+
+/* Fade transition on re-render of a component */
+.fade-enter {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-leave {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}

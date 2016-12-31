@@ -4,6 +4,7 @@
   float: left;
   box-sizing: border-box;
   text-align: center;
+  position: relative;
 }
 
 .product-thumbnails ul {

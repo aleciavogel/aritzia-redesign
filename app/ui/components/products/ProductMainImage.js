@@ -1,5 +1,6 @@
 var React = require('react');
 var Component = React.Component;
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 class ProductMainImage extends Component {
   constructor(props) {
@@ -9,7 +10,15 @@ class ProductMainImage extends Component {
   render() {
     return (
       <div className="current-image">
-        <img src={this.props.currentImage} />
+        <ReactCSSTransitionGroup
+          className="current-image"
+          transitionName="fade"
+          transitionEnter={true}
+          transitionEnterTimeout={300}
+          transitionLeave={true}
+          transitionLeaveTimeout={300}>
+          <img className="current-image" src={this.props.currentImage} key={this.props.currentImage} />
+        </ReactCSSTransitionGroup>
       </div>
     );
   }
