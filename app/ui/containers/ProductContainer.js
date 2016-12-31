@@ -1,6 +1,10 @@
 var React = require('react');
 var Component = React.Component;
+
 require('./ProductContainer.css');
+
+var ProductGallery = require('../components/products/ProductGallery.js');
+var ProductDescription = require('../components/products/ProductDescription.js');
 
 class ProductContainer extends Component {
   constructor(props) {
@@ -9,7 +13,10 @@ class ProductContainer extends Component {
   
   render() {
     return(
-      <div className="product-container">This is the product container</div>
+      <div className="product-container">
+        <ProductGallery />
+        <ProductDescription />
+      </div>
     );
   }
 }

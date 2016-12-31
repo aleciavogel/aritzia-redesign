@@ -1,5 +1,5 @@
 header { 
-  padding: 8px 3.4% 5px;
+  padding: 10px 3.4% 5px;
 }
 
 .utilities {
@@ -20,7 +20,7 @@ header {
   list-style: none;
   border-right: 1px solid #dcddde;
   white-space: nowrap;
-  padding: 3px 10px 0px;
+  padding: 4px 10px 1px;
   line-height: 1;
   text-transform: uppercase;
   margin: 0;

@@ -3,7 +3,7 @@ var Component = React.Component;
 
 require('./Header.css');
 
-class Header extends Component {
+class Header extends Component {  
   render() {
     return (
       <header>

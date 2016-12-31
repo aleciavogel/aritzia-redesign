@@ -4,6 +4,12 @@ var Component = React.Component;
 require('./Footer.css');
 
 class Footer extends Component {
+  onMailingListClick(e) {
+    // TODO: sending & success animations
+    e.preventDefault();
+    console.log("It was submitted");
+  }
+  
   render() {
     return (
       <footer>
@@ -60,7 +66,7 @@ class Footer extends Component {
             <div className="mailing-list-signup">
               <span>Join Aritzia's Mailing List</span>
               <p>Insider info on sales, new arrivals, and more good stuff.</p>
-              <form>
+              <form onSubmit={this.onMailingListClick.bind(this)}>
                 <input type="email" placeholder="Enter your email"/><button type="submit">Sign Up</button>
               </form>
             </div>
