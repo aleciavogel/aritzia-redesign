@@ -5,6 +5,7 @@ require('./ProductContainer.css');
 
 var ProductGallery = require('../components/products/ProductGallery.js');
 var ProductDescription = require('../components/products/ProductDescription.js');
+var ProductInfo = require('../components/products/ProductInfo.js');
 
 const product = {
   collection: 'Wilfred Free',
@@ -95,9 +96,12 @@ class ProductContainer extends Component {
   render() {
     return(
       <div className="product-container">
-        <div className="product-inner-wrapper">
+        <div className="product-inner-wrapper product-top">
           <ProductGallery images={product.images} />
           <ProductDescription product={product} />
+        </div>
+        <div className="product-bottom">
+          <ProductInfo />
         </div>
       </div>
     );
