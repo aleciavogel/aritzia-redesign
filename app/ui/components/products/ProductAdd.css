@@ -1,0 +1,14 @@
+.product-add button {
+  background: #111;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: .05em;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+}

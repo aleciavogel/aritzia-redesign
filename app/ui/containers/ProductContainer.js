@@ -50,7 +50,7 @@ const product = {
     }
   ],
   notes: {
-    designer: 'Cozy Italian wool, meet the cold shoulder. This sweater is made with a rib-knit collar, so it hugs your shoulders and stays in place.',
+    designer: 'Cozy Italian wool, meet the cold shoulder! This sweater is made with a rib-knit collar, so it hugs your shoulders and stays in place.',
     fit: 'slim',
     sizing: true,
     model: 'Model is 180/5\'9 wearing a size S',

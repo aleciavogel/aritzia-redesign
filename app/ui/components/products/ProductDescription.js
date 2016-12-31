@@ -5,6 +5,7 @@ require('./ProductDescription.css');
 
 var ProductColours = require('./ProductColours.js');
 var ProductSizes = require('./ProductSizes.js');
+var ProductAdd = require('./ProductAdd.js');
 
 class ProductDescription extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class ProductDescription extends Component {
         </div>
         <ProductColours />
         <ProductSizes />
+        <ProductAdd />
       </div>
     );
   }

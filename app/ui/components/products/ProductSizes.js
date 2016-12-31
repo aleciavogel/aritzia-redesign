@@ -1,6 +1,8 @@
 var React = require('react');
 var Component = React.Component;
 
+require('./ProductSizes.css');
+
 class ProductSizes extends Component {
   constructor(props) {
     super(props);

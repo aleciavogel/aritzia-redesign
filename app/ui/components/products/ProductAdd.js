@@ -1,0 +1,20 @@
+var React = require('react');
+var Component = React.Component;
+
+require('./ProductAdd.css');
+
+class ProductAdd extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    return (
+      <div className="product-add">
+        <button type="button">Add to Bag</button>
+      </div>
+    );
+  }
+}
+
+module.exports = ProductAdd;
