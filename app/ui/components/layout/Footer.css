@@ -1,3 +1,83 @@
+.footer-cta {
+  background: #333;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 1em;
+}
+
+.footer-cta ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1.6em;
+}
+
+.footer-cta .ar-icon {
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background: url('http://localhost:8080/app/public/images/interface-sprite.png');
+  text-indent: -99999px;
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+#pin {
+  background-position: 0 -1225px;
+}
+
+#card {
+  background-position: 0 -1190px;
+}
+
+#hanger {
+  background-position: 0 -1260px;
+}
+
+.footer-cta li {
+  display: inline-block;
+  padding: 0px 60px;
+  border-right: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.footer-cta li:last-child {
+  border-right: none;
+}
+
+.footer-cta a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: .1em;
+  line-height: 18px;
+  outline: medium none;
+  display: block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.footer-cta a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #999;
+  content: '';
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.footer-cta a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+  height: 1px;
+}
+
 .footer-container {
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +90,7 @@
 .links {
   background: #f7f7f7;
   padding: 80px 3.5% 60px;
-  font-size: 0.8em;
+  font-size: 0.78em;
   text-align: center;
 }
 
@@ -38,11 +118,33 @@
   font-weight: 400;
   color: #999;
   line-height: 18px;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.links ul li a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #888;
+  content: '';
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .links ul li a:hover {
   color: #333;
-  border-bottom: 1px solid #999;
+}
+
+.links ul li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+  height: 1px;
 }
 
 .links p,
@@ -53,9 +155,14 @@
 
 .need-to-talk {
   background: #f7f7f7;
-  font-size: 0.8em;
+  font-size: 0.78em;
   text-align: center;
-  padding: 0px 3.5% 60px;
+  padding: 0px 3.5% 80px;
+}
+
+.need-to-talk p {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .left {
@@ -66,10 +173,114 @@
   color: #333;
   text-decoration: none;
   border-bottom: 1px solid #f7f7f7;
-  padding-bottom: 1px;
+  padding-bottom: 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.left a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #888;
+  content: '';
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .left a:hover {
   color: #333;
-  border-bottom: solid 1px #999;
 }
+
+.left a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+  height: 1px;
+}
+
+.right {
+  margin-top: auto;
+}
+
+.right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right ul li {
+  display: inline-block;
+  height: 23px;
+  margin: 0px 10px;
+}
+
+.right ul li:last-child {
+  margin-right: 0px;
+}
+
+.right ul li svg {
+  height: 100%;
+  width: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 3.5%;
+  margin: 0;
+}
+
+.footer-bottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.footer-bottom ul li {
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 0.78em;
+  font-weight: 400;
+}
+
+.footer-bottom ul li a {
+  color: #999;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom ul li a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #888;
+  content: '';
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.footer-bottom ul li a:hover {
+  color: #222;
+}
+
+.footer-bottom ul li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+  height: 1px;
+}
+
+.footer-bottom p {
+  color: #999;
+  margin: 0;
+  padding: 0;
+}
+

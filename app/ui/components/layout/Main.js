@@ -2,7 +2,7 @@ var React = require('react');
 var Component = React.Component;
 
 var Header = require('./Header');
-var Footer = require('./Footer');
+var Footer = require('./Footer.js');
 
 require('./Main.css');
 require('./cssreset.css');
