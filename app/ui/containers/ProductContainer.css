@@ -3,4 +3,12 @@
   width: 100%;
   overflow: hidden;
   display: inline-block;
+  text-align: center;
+}
+
+.product-inner-wrapper {
+  width: 100%;
+  max-width: 1024px;
+  text-align: left;
+  display: inline-block;
 }
