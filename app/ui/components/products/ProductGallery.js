@@ -6,7 +6,7 @@ require('./ProductGallery.css');
 class ProductGallery extends Component {
   render() {
     return (
-      <div className="product-images">Product Gallery</div>
+      <div className="product-gallery">Product Gallery</div>
     );
   }
 }
