@@ -14,41 +14,69 @@ const product = {
   colours: [
     {
       name: 'Black',
-      swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_1274_sw.jpg'
+      slug: 'black',
+      swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_1274_sw.jpg',
+      sizes: [
+        { 
+          size: 'xxs',
+          stock: 'low'
+        },
+        {
+          size: 'xs',
+          stock: 'out'
+        },
+        {
+          size: 's',
+          stock: 'low'
+        },
+        {
+          size: 'm',
+          stock: 'out'
+        },
+        {
+          size: 'l',
+          stock: 'out'
+        },
+        {
+          size: 'xl',
+          stock: 'out'
+        }
+      ],
     },
     {
       name: 'Heather Herring',
-      swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_10359_sw.jpg'
+      slug: 'heather-herring',
+      swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_10359_sw.jpg',
+      sizes: [
+        { 
+          size: 'xxs',
+          stock: 'out'
+        },
+        {
+          size: 'xs',
+          stock: 'out'
+        },
+        {
+          size: 's',
+          stock: 'low'
+        },
+        {
+          size: 'm',
+          stock: 'out'
+        },
+        {
+          size: 'l',
+          stock: 'low'
+        },
+        {
+          size: 'xl',
+          stock: 'out'
+        }
+      ],
     }
   ],
   regPrice: '125',
   salePrice: '118',
-  sizes: [
-    { 
-      size: 'xxs',
-      stock: 'low'
-    },
-    {
-      size: 'xs',
-      stock: 'out'
-    },
-    {
-      size: 's',
-      stock: 'low'
-    },
-    {
-      size: 'm',
-      stock: 'out'
-    },
-    {
-      size: 'l',
-      stock: 'out'
-    },
-    {
-      size: 'xl',
-      stock: 'out'
-    }
-  ],
   notes: {
     designer: 'Cozy Italian wool, meet the cold shoulder! This sweater is made with a rib-knit collar, so it hugs your shoulders and stays in place.',
     fit: 'slim',

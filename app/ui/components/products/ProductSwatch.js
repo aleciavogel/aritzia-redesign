@@ -13,7 +13,7 @@ class ProductSwatch extends Component {
         className={this.props.isActive} 
         onClick={this.props.handleActiveSwatch.bind(this)} >
         <span 
-          id={this.props.id}
+          id={this.props.colour.slug}
           style={{'backgroundImage': swatchUrl}}></span>
       </li>
     );

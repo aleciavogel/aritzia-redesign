@@ -10,6 +10,26 @@ var ProductAdd = require('./ProductAdd.js');
 class ProductDescription extends Component {
   constructor(props) {
     super(props);
+    
+    this.state = {
+      activeColour: this.props.product.colours[0],
+    }
+  }
+  
+  getColourIndex(value, arr, prop) {
+    for(var i = 0; i < arr.length; i++) {
+      if(arr[i][prop] === value) {
+        return i
+      }
+    }
+    return -1;
+  }
+  
+  handleActiveColourChange(e) {   
+    let colourIndex = this.getColourIndex(e.target.id, this.props.product.colours, 'slug'); 
+    this.setState({
+      activeColour: this.props.product.colours[colourIndex]
+    });
   }
   
   render() {
@@ -27,9 +47,14 @@ class ProductDescription extends Component {
             {this.props.product.notes.designer}
           </p>
         </div>
-        <ProductColours colours={this.props.product.colours} />
-        <ProductSizes />
-        <ProductAdd />
+        <ProductColours 
+          colours={this.props.product.colours} 
+          activeColour={this.state.activeColour.slug} 
+          handleActiveColourChange={this.handleActiveColourChange.bind(this)}/>
+        <ProductSizes 
+          currentSizes={this.state.activeColour.sizes} />
+        <ProductAdd 
+          id={this.props.product.id}/>
       </div>
     );
   }

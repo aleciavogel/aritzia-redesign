@@ -12,6 +12,9 @@ class ProductAdd extends Component {
     return (
       <div className="product-add">
         <button type="button">Add to Bag</button>
+        <div className="product-utilities">
+          <a href="#">Add To Wishlist</a><span>Item # {this.props.id}</span>
+        </div>
       </div>
     );
   }

@@ -11,4 +11,32 @@
   width: 100%;
   padding: 1em;
   cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.product-utilities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-utilities span {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .5);
+  line-height: 1.9em;
+  font-size: 0.75em;
+  letter-spacing: normal;
+}
+
+.product-utilities a {
+  color: #666;
+  text-decoration: none;
+  padding: 0 2px 2px;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.product-utilities a:hover {
+  color: #000;
+  border-bottom-color: #000;
 }
