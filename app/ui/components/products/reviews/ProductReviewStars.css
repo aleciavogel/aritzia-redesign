@@ -11,10 +11,18 @@
   fill: #555 !important;
 }
 
-.rating-stars span {
+.rating-stars .text {
   font-size: 0.85em;
   vertical-align: top;
   padding-top: 2px;
   display: inline-block;
   margin-left: 3px;
+  margin-right: 20px;
+}
+
+.rating-stars .arrow-right {
+  opacity: 0.4;
+  background-position: 0 -533px;
+  height: 16px;
+  width: 26px;
 }

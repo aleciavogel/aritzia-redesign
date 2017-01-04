@@ -5,7 +5,7 @@ require('./Footer.css');
 
 class Footer extends Component {
   onMailingListClick(e) {
-    // TODO: sending & success animations
+    // TODO? sending & success animations
     e.preventDefault();
     console.log("It was submitted");
   }
