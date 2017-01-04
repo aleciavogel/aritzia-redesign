@@ -3,9 +3,9 @@ var Component = React.Component;
 
 require('./ProductContainer.css');
 
-var ProductGallery = require('../components/products/ProductGallery.js');
-var ProductDescription = require('../components/products/ProductDescription.js');
-var ProductInfo = require('../components/products/ProductInfo.js');
+var ProductGallery = require('../components/products/gallery/ProductGallery.js');
+var ProductDescription = require('../components/products/description/ProductDescription.js');
+var ProductInfo = require('../components/products/description/ProductInfo.js');
 
 const product = {
   collection: 'Wilfred Free',

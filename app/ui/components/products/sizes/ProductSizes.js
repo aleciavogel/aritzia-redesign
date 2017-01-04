@@ -3,19 +3,22 @@ var Component = React.Component;
 
 require('./ProductSizes.css');
 
+var ProductSizeButton = require('./ProductSizeButton.js')
+
 class ProductSizes extends Component {
   constructor(props) {
     super(props);
   }
   
   renderSizes() {
-    console.log('rendering sizes');
     return this.props.currentSizes.map( (size) => {
-      let stockClass = `stock-${size.stock}`;
+      let isActiveSize = this.props.selectedSize === size.size;
       return (
-        <li key={size.size} className={stockClass}>
-          {size.size}
-        </li>
+        <ProductSizeButton
+          key={size.size}
+          handleActiveSizeChange={this.props.handleActiveSizeChange.bind(this)}
+          size={size}
+          isActiveSize={isActiveSize} />
       );
     });
   }

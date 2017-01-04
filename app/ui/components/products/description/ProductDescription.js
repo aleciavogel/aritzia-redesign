@@ -3,9 +3,9 @@ var Component = React.Component;
 
 require('./ProductDescription.css');
 
-var ProductColours = require('./ProductColours.js');
-var ProductSizes = require('./ProductSizes.js');
-var ProductAdd = require('./ProductAdd.js');
+var ProductColours = require('../colours/ProductColours.js');
+var ProductSizes = require('../sizes/ProductSizes.js');
+var ProductAdd = require('../add/ProductAdd.js');
 
 class ProductDescription extends Component {
   constructor(props) {
@@ -13,10 +13,11 @@ class ProductDescription extends Component {
     
     this.state = {
       activeColour: this.props.product.colours[0],
+      activeSize: ''
     }
   }
   
-  getColourIndex(value, arr, prop) {
+  getIndex(value, arr, prop) {
     for(var i = 0; i < arr.length; i++) {
       if(arr[i][prop] === value) {
         return i
@@ -26,10 +27,21 @@ class ProductDescription extends Component {
   }
   
   handleActiveColourChange(e) {   
-    let colourIndex = this.getColourIndex(e.target.id, this.props.product.colours, 'slug'); 
+    let colourIndex = this.getIndex(e.target.id, this.props.product.colours, 'slug'); 
     this.setState({
       activeColour: this.props.product.colours[colourIndex]
     });
+  }
+  
+  handleActiveSizeChange(e) {
+    
+    let sizeIndex = this.getIndex(e.target.id, this.state.activeColour.sizes, 'size');
+    console.log(this.state.activeColour.sizes[sizeIndex].stock);
+    if(this.state.activeColour.sizes[sizeIndex].stock !== 'out') {
+      this.setState({
+        activeSize: e.target.id
+      });
+    }
   }
   
   render() {
@@ -52,7 +64,9 @@ class ProductDescription extends Component {
           activeColour={this.state.activeColour.slug} 
           handleActiveColourChange={this.handleActiveColourChange.bind(this)}/>
         <ProductSizes 
-          currentSizes={this.state.activeColour.sizes} />
+          currentSizes={this.state.activeColour.sizes}
+          selectedSize={this.state.activeSize}
+          handleActiveSizeChange={this.handleActiveSizeChange.bind(this)} />
         <ProductAdd 
           id={this.props.product.id}/>
       </div>

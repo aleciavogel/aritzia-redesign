@@ -3,6 +3,24 @@
   margin-bottom: 30px;
 }
 
+.stock-low,
+.stock-high {
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.active-size {
+  border: solid 2px #222 !important;
+  background: #222;
+  color: #fff;
+}
+
+.active-size:hover {
+  border: solid 2px #555 !important;
+  background: #555 !important;
+}
+
 .product-sizes ul {
   list-style-type: none;
   margin: 0;
@@ -26,18 +44,6 @@
 
 .product-sizes ul li:first-child {
   margin-left: 0;
-}
-
-.active-size {
-  border-color: #222;
-  background: #222;
-}
-
-.stock-low,
-.stock-high {
-  color: #222;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
 .stock-low:hover {
