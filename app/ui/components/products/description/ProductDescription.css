@@ -3,7 +3,7 @@
   max-width: 550px;
   display: block;
   float: left;
-  padding: 80px 40px 0px;
+  padding: 80px 60px 0px 50px    ;
   box-sizing: border-box;
 }
 
@@ -64,6 +64,7 @@
 }
 
 .product-intro {
+  margin-bottom: 40px;
 }
 
 .description {

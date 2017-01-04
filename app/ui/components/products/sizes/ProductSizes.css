@@ -1,3 +1,31 @@
+.product-size-title {  
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.product-size-title span {
+  font-weight: 600;
+  color: #333;
+}
+
+.product-size-title a {
+  margin-left: 15px;
+  color: #888;
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-bottom: -2px;
+  border-bottom: solid 1px #888;
+  display: inline-block;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-size-title a:hover {
+  color: #222;
+  border-bottom: solid 1px #222;
+}
+
 .product-sizes {
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -29,7 +57,7 @@
 
 .product-sizes ul li {
   text-transform: uppercase;
-  font-size: .65em;
+  font-size: .63em;
   font-weight: 600;
   text-align: center;
   display: inline-block;

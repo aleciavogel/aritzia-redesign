@@ -1,5 +1,17 @@
 .colour-swatches {
-  
+  margin-bottom: 15px;
+}
+
+.colour-swatches div {
+  font-size: 0.65em;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.colour-swatches div span {
+  display: inline-block;
 }
 
 .colour-swatches ul {

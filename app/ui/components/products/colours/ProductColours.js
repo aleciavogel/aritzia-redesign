@@ -1,5 +1,6 @@
 var React = require('react');
 var Component = React.Component;
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 require('./ProductColours.css');
 
@@ -13,7 +14,7 @@ class ProductColours extends Component {
   renderSwatches() {
     let i = -1;
     return this.props.colours.map( (colour) => {
-      let swatchClass = colour.slug === this.props.activeColour ? 'active-swatch' : '';
+      let swatchClass = colour.slug === this.props.activeColour.slug ? 'active-swatch' : '';
       return (
         <ProductSwatch
           colour={colour}
@@ -27,6 +28,8 @@ class ProductColours extends Component {
   render() {
     return (
       <div className="colour-swatches">
+        <div>Colour: <span>{this.props.activeColour.name}</span>
+        </div>
         <ul>
           {this.renderSwatches()}
         </ul>

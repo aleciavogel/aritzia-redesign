@@ -26,6 +26,9 @@ class ProductSizes extends Component {
   render() {
     return (
       <div className="product-sizes">
+        <div className="product-size-title">
+          <span>Size</span><a href="#">Size chart</a>
+        </div>
         <ul>
           {this.renderSizes()}
         </ul>

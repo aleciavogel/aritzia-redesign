@@ -12,6 +12,11 @@
   padding: 1em;
   cursor: pointer;
   margin-bottom: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+.product-add button:hover {
+  background: #333;
 }
 
 .product-utilities {

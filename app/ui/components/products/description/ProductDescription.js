@@ -17,26 +17,18 @@ class ProductDescription extends Component {
     }
   }
   
-  getIndex(value, arr, prop) {
-    for(var i = 0; i < arr.length; i++) {
-      if(arr[i][prop] === value) {
-        return i
-      }
-    }
-    return -1;
-  }
-  
   handleActiveColourChange(e) {   
-    let colourIndex = this.getIndex(e.target.id, this.props.product.colours, 'slug'); 
+    let colourIndex = this.props.getIndex(e.target.id, this.props.product.colours, 'slug'); 
     this.setState({
       activeColour: this.props.product.colours[colourIndex]
     });
+    
+    this.props.handleImageChange(colourIndex);
   }
   
   handleActiveSizeChange(e) {
+    let sizeIndex = this.props.getIndex(e.target.id, this.state.activeColour.sizes, 'size');
     
-    let sizeIndex = this.getIndex(e.target.id, this.state.activeColour.sizes, 'size');
-    console.log(this.state.activeColour.sizes[sizeIndex].stock);
     if(this.state.activeColour.sizes[sizeIndex].stock !== 'out') {
       this.setState({
         activeSize: e.target.id
@@ -61,7 +53,7 @@ class ProductDescription extends Component {
         </div>
         <ProductColours 
           colours={this.props.product.colours} 
-          activeColour={this.state.activeColour.slug} 
+          activeColour={this.state.activeColour} 
           handleActiveColourChange={this.handleActiveColourChange.bind(this)}/>
         <ProductSizes 
           currentSizes={this.state.activeColour.sizes}

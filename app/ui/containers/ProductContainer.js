@@ -16,6 +16,7 @@ const product = {
       name: 'Black',
       slug: 'black',
       swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_1274_sw.jpg',
+      image: 'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_a.jpg',
       sizes: [
         { 
           size: 'xxs',
@@ -44,9 +45,42 @@ const product = {
       ],
     },
     {
+      name: 'Heather Charcoal',
+      slug: 'heather-charcoal',
+      swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_6046_sw.jpg',
+      image: 'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_6046_on_a.jpg',
+      sizes: [
+        { 
+          size: 'xxs',
+          stock: 'low'
+        },
+        {
+          size: 'xs',
+          stock: 'low'
+        },
+        {
+          size: 's',
+          stock: 'low'
+        },
+        {
+          size: 'm',
+          stock: 'low'
+        },
+        {
+          size: 'l',
+          stock: 'low'
+        },
+        {
+          size: 'xl',
+          stock: 'out'
+        }
+      ],
+    },
+    {
       name: 'Heather Herring',
       slug: 'heather-herring',
       swatch: 'http://s7d9.scene7.com/is/image/Aritzia/swatch/f16_07_a03_62947_10359_sw.jpg',
+      image: 'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_10359_off_a.jpg',
       sizes: [
         { 
           size: 'xxs',
@@ -119,14 +153,46 @@ const product = {
 class ProductContainer extends Component {
   constructor(props) {
     super(props);
+    
+    this.state = {
+      currentImage: product.images[0]
+    }
+  }
+  
+  handleThumbnailImageChange(e) {
+    this.setState({
+      currentImage: e.target.src
+    });
+  }
+  
+  handleSwatchImageChange(colourIndex) {
+    this.setState({
+      currentImage: product.colours[colourIndex].image
+    });
+  }
+  
+  getIndex(value, arr, prop) {
+    for(var i = 0; i < arr.length; i++) {
+      if(arr[i][prop] === value) {
+        return i
+      }
+    }
+    return -1;
   }
   
   render() {
     return(
       <div className="product-container">
         <div className="product-inner-wrapper product-top">
-          <ProductGallery images={product.images} />
-          <ProductDescription product={product} />
+          <ProductGallery
+            currentImage={this.state.currentImage} 
+            otherColours={product.colours} 
+            images={product.images}
+            handleImageChange={this.handleThumbnailImageChange.bind(this)} />
+          <ProductDescription 
+            getIndex={this.getIndex.bind(this)}
+            handleImageChange={this.handleSwatchImageChange.bind(this)}
+            product={product} />
         </div>
         <div className="product-bottom">
           <ProductInfo />
