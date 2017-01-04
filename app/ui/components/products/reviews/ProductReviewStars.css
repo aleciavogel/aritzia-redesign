@@ -1,0 +1,20 @@
+.rating-stars {
+  height: 15px;
+}
+
+.rating-stars svg {
+  height: 100%;
+  fill: #bbb;
+}
+
+.filled-star {
+  fill: #555 !important;
+}
+
+.rating-stars span {
+  font-size: 0.85em;
+  vertical-align: top;
+  padding-top: 2px;
+  display: inline-block;
+  margin-left: 3px;
+}

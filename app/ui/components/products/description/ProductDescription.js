@@ -6,6 +6,7 @@ require('./ProductDescription.css');
 var ProductColours = require('../colours/ProductColours.js');
 var ProductSizes = require('../sizes/ProductSizes.js');
 var ProductAdd = require('../add/ProductAdd.js');
+var ProductReviewStars = require('../reviews/ProductReviewStars.js');
 
 class ProductDescription extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class ProductDescription extends Component {
           <h1>
             {this.props.product.name}
           </h1>
+          <ProductReviewStars rating="4.0" />
           <div className="prices">
             <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
           </div>

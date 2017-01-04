@@ -112,8 +112,8 @@
 
 .links ul li a {
   text-decoration: none;
-  font-weight: 400;
-  color: #999;
+  font-weight: 300;
+  color: #888;
   line-height: 18px;
   transition: color 0.3s ease-in-out;
   padding-bottom: 0px;
@@ -164,7 +164,7 @@
   box-sizing: border-box;
   cursor: auto;
   user-select: text;
-  font-weight: 400;
+  font-weight: 300;
   height: 40px;
   position: relative;
 }
@@ -192,9 +192,10 @@
 
 .links p,
 .need-to-talk p {
-  color: #999;
+  color: #888;
   line-height: 18px;
   letter-spacing: .06em;
+  font-weight: 300;
 }
 
 .need-to-talk {
