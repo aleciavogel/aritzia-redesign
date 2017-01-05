@@ -134,7 +134,9 @@ const product = {
     'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_b.jpg',
     'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_c.jpg',
     'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_d.jpg',
-    'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_e.jpg'
+    'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_1274_on_e.jpg',
+    'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_6046_on_a.jpg',
+    'http://s7d9.scene7.com/is/image/Aritzia/large/f16_07_a03_62947_10359_off_a.jpg'
   ],
   modelWearing: [
     {

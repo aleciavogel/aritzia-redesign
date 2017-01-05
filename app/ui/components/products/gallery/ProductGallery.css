@@ -5,6 +5,14 @@
   box-sizing: border-box;
   text-align: center;
   position: relative;
+  overflow: hidden;
+}
+
+.product-thumbnails {
+  height: 105px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .product-thumbnails ul {
@@ -12,18 +20,29 @@
   margin: 0;
   padding: 0;
   display: inline-block;
+  width: calc(100% - 50px);
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .product-thumbnails ul li {
   width: 65px;
   height: auto;
   overflow: hidden;
-  margin: 10px;
+  margin: 10px 10px 30px;
   display: inline-block;
   transform: translateY(0px);
   transition: all 0.2s linear;
   cursor: pointer;
   border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnails ul li:first-child {
+  margin-left: 0;
+}
+
+.product-thumbnails ul li:last-child {
+  margin-right: 0;
 }
 
 .product-thumbnails ul li.active-thumbnail {
@@ -38,6 +57,29 @@
 .product-thumbnails ul li img {
   width: 100%;
   display: block;
+}
+
+.product-thumbnails span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+#right{
+  right: 5px;
+}
+
+#left {
+  left: 0;
+}
+
+.product-thumbnails .too-far {
+  color: #ccc;
 }
 
 .current-image img {
