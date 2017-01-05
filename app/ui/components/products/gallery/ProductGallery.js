@@ -15,7 +15,10 @@ class ProductGallery extends Component {
     return (
       <div className="product-gallery">
         <ProductMainImage currentImage={this.props.currentImage} />
-        <ProductThumbnails images={this.props.images} handleImageChange={this.props.handleImageChange.bind(this)} />
+        <ProductThumbnails 
+          images={this.props.images}
+          handleImageChange={this.props.handleImageChange.bind(this)}
+          activeImage={this.props.currentImage} />
       </div>
     );
   }

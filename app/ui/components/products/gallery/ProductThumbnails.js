@@ -10,8 +10,14 @@ class ProductThumbnails extends Component {
     let i = -1;
     return images.map( (image) => {
       i++;
+      
+      let activeImageClass = '';
+      
+      if (image === this.props.activeImage) {
+        activeImageClass = 'active-thumbnail';
+      }
       return (
-        <li key={i}>
+        <li key={i} className={activeImageClass}>
           <img src={image} onClick={this.props.handleImageChange}/>
         </li>
       );

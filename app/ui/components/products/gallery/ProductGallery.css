@@ -23,6 +23,11 @@
   transform: translateY(0px);
   transition: all 0.2s linear;
   cursor: pointer;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnails ul li.active-thumbnail {
+  border: solid 1px #222;
 }
 
 .product-thumbnails ul li:hover {

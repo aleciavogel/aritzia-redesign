@@ -14,12 +14,28 @@
 
 .rating-stars .text {
   font-size: 0.85em;
+  font-weight: 400;
   vertical-align: top;
   padding-top: 2px;
   display: inline-block;
   margin-left: 3px;
   margin-right: 20px;
   color: #222;
+}
+
+.rating-stars a.text {
+  cursor: pointer;
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+  border-bottom: solid 1px #555;
+  color: #888;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.rating-stars a.text:hover {
+  color: #222;
+  border-bottom: solid 1px #222;
 }
 
 .rating-stars .arrow-right {
