@@ -1,3 +1,9 @@
+.product-info {
+  display: inline-block;
+  width: 100%;
+  max-width: 1400px;
+}
+
 .product-info-tabs {
   border: solid 1px #ddd;
   display: inline-block;
@@ -22,4 +28,6 @@
   width: 100%;
   border-top: solid 1px #ddd;
   margin-top: -30px;
+  padding-top: 50px;
+  text-align: center;
 }

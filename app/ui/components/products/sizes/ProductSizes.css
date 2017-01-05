@@ -1,7 +1,7 @@
 .product-size-title {  
   font-size: 0.65em;
   letter-spacing: 0.05em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .product-size-title span {
@@ -28,7 +28,7 @@
 
 .product-sizes {
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .stock-low,

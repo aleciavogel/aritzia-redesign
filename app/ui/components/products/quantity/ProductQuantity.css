@@ -1,0 +1,43 @@
+.product-quantity {
+  margin-bottom: 30px;
+}
+
+.product-quantity .amount {
+  font-size: 0.65em;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.product-quantity button {
+  height: 35px;
+  width: 35px;
+  font-weight: 300;
+  color: #222;
+  border: solid 2px #ddd;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.product-quantity button:hover {
+  background: #aaa;
+  border: solid 2px #aaa;
+}
+
+.product-quantity button.disabled {
+  background: #e9e9e9;
+  border: solid 2px #e9e9e9;
+  cursor: auto;
+}
+
+.product-quantity button:hover .disabled {
+  background: #e9e9e9;
+}
+
+.product-quantity span {
+  margin: auto 10px;
+  font-weight: 300;
+  color: #222;
+}

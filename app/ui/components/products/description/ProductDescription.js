@@ -5,6 +5,7 @@ require('./ProductDescription.css');
 
 var ProductColours = require('../colours/ProductColours.js');
 var ProductSizes = require('../sizes/ProductSizes.js');
+var ProductQuantity = require('../quantity/ProductQuantity.js');
 var ProductAdd = require('../add/ProductAdd.js');
 var ProductReviewStars = require('../reviews/ProductReviewStars.js');
 
@@ -14,7 +15,8 @@ class ProductDescription extends Component {
     
     this.state = {
       activeColour: this.props.product.colours[0],
-      activeSize: ''
+      activeSize: '',
+      activeQuantity: 1,
     }
   }
   
@@ -37,21 +39,41 @@ class ProductDescription extends Component {
     }
   }
   
+  handleActiveQuantityChange(e) {
+    let amount = 0,
+        newQuantity = this.state.activeQuantity;
+    
+    if(e.target.id === 'more') {
+      amount += 1;
+    } else {
+      amount -= 1;
+    }
+    
+    newQuantity += amount;
+    
+    if(newQuantity >= 1 && newQuantity <= 7) {
+      this.setState({
+        activeQuantity: newQuantity
+      });
+    }
+  }
+  
   render() {
     return (
       <div className="product-description">
         <div className="product-intro">
-          <a href="#" className="product-collection">{this.props.product.collection}</a>
-          <h1>
+          <a href="#" className="product-collection" style={{'display': 'block'}}>{this.props.product.collection}</a>
+          <h1 style={{'clear': 'none', 'width': 'auto', 'display': 'inline-block'}}>
             {this.props.product.name}
           </h1>
+          <div className="prices" style={{'float': 'right', 'display': 'inlineBlock', 'marginTop': 8, 'marginBottom': -8}}>
+            <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
+          </div>
           <ProductReviewStars rating="4.0" />
           <p className="description">
             {this.props.product.notes.designer}
           </p>
-          <div className="prices">
-            <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
-          </div>
+          
         </div>
         <ProductColours 
           colours={this.props.product.colours} 
@@ -61,6 +83,7 @@ class ProductDescription extends Component {
           currentSizes={this.state.activeColour.sizes}
           selectedSize={this.state.activeSize}
           handleActiveSizeChange={this.handleActiveSizeChange.bind(this)} />
+        <ProductQuantity handleActiveQuantityChange={this.handleActiveQuantityChange.bind(this)} activeQuantity={this.state.activeQuantity}/>
         <ProductAdd 
           id={this.props.product.id}/>
       </div>
