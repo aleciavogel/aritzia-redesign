@@ -46,12 +46,12 @@ class ProductDescription extends Component {
             {this.props.product.name}
           </h1>
           <ProductReviewStars rating="4.0" />
-          <div className="prices">
-            <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
-          </div>
           <p className="description">
             {this.props.product.notes.designer}
           </p>
+          <div className="prices">
+            <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
+          </div>
         </div>
         <ProductColours 
           colours={this.props.product.colours} 
