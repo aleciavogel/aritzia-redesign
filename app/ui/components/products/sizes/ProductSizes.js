@@ -32,6 +32,9 @@ class ProductSizes extends Component {
         <ul>
           {this.renderSizes()}
         </ul>
+        <div className="stock-out-cta">
+          Is your size unavailable? <a href="#">We've got your back</a>
+        </div>
       </div>
     );
   }

@@ -40,7 +40,7 @@
 
 .product-sizes ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 8px;
   padding: 0;
 }
 
@@ -83,4 +83,26 @@
   color: rgba(0, 0, 0, 0.15) !important;
   border: solid 2px #ddd !important;
   cursor: default !important;
+}
+
+.stock-out-cta {
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.stock-out-cta a {
+  color: #888;
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-bottom: -2px;
+  border-bottom: solid 1px #888;
+  display: inline-block;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.stock-out-cta a:hover {
+  color: #222;
+  border-bottom: solid 1px #222;
 }
