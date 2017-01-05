@@ -1,9 +1,18 @@
 .rating-stars {
+  width: 100%;
   height: 15px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.rating-stars svg {
+.rating-stars div {
+  height: 15px;
+  display: flex-item;
+  width: auto;
+}
+
+.rating-stars div svg {
   height: 100%;
   fill: #bbb;
 }
@@ -19,7 +28,6 @@
   padding-top: 2px;
   display: inline-block;
   margin-left: 3px;
-  margin-right: 20px;
   color: #222;
 }
 
@@ -40,7 +48,7 @@
 
 .rating-stars .arrow-right {
   opacity: 0.4;
-  background-position: 0 -533px;
+  background-position: -11px -533px;
   height: 16px;
-  width: 26px;
+  width: 15px;
 }

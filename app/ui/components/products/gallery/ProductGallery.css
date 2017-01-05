@@ -78,8 +78,9 @@
   left: 0;
 }
 
-.product-thumbnails .too-far {
+.product-thumbnails span.too-far {
   color: #ccc;
+  cursor: default;
 }
 
 .current-image img {

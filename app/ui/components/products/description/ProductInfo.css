@@ -20,7 +20,40 @@
 .product-info-tabs ul li {
   display: inline-block;
   padding: 20px;
+}
+
+.product-info-tabs ul li a {
+  text-decoration: none;
+  padding: 0px 2px 0px;
+  position: relative;
+  display: block;
   cursor: pointer;
+  color: #555;
+}
+
+.product-info-tabs ul li a:hover,
+.product-info-tabs ul li a.active-tab {
+  color: #222;
+}
+
+.product-info-tabs ul li a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  transform: translateY(9px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.product-info-tabs ul li a:hover:after,
+.product-info-tabs ul li a.active-tab:after {
+  opacity: 1;
+  transform: translateY(4px);
+  height: 2px;
 }
 
 .product-info-body {

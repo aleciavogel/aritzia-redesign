@@ -83,7 +83,9 @@ class ProductDescription extends Component {
           currentSizes={this.state.activeColour.sizes}
           selectedSize={this.state.activeSize}
           handleActiveSizeChange={this.handleActiveSizeChange.bind(this)} />
-        <ProductQuantity handleActiveQuantityChange={this.handleActiveQuantityChange.bind(this)} activeQuantity={this.state.activeQuantity}/>
+        <ProductQuantity 
+          handleActiveQuantityChange={this.handleActiveQuantityChange.bind(this)} 
+          activeQuantity={this.state.activeQuantity}/>
         <ProductAdd 
           id={this.props.product.id}/>
       </div>

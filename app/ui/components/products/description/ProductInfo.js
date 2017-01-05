@@ -10,7 +10,7 @@ class ProductInfo extends Component {
     super(props);
     
     this.state = {
-      step: 1
+      step: 1,
     }
   }
   
@@ -34,13 +34,47 @@ class ProductInfo extends Component {
   }
   
   render() {
+    let revTab, sizeTab, matTab = '';
+    
+    if(this.state.step === 1) {
+      revTab = 'active-tab';
+    } else if(this.state.step === 2) {
+      sizeTab = 'active-tab';
+    } else {
+      matTab = 'active-tab'
+    }
+    
     return (
       <div className="product-info">
         <div className="product-info-tabs">
           <ul>
-            <li><a id="reviews-info" href="#" onClick={this.changeCurrentStep.bind(this)}>Reviews</a></li>
-            <li><a id="size-info" href="#" onClick={this.changeCurrentStep.bind(this)}>Size & Fit</a></li>
-            <li><a id="materials-info" href="#" onClick={this.changeCurrentStep.bind(this)}>Materials & Care</a></li>
+            <li>
+              <a 
+                id="reviews-info" 
+                className={revTab}
+                href="#" 
+                onClick={this.changeCurrentStep.bind(this)}>
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a 
+                id="size-info"
+                className={sizeTab} 
+                href="#" 
+                onClick={this.changeCurrentStep.bind(this)}>
+                Size & Fit
+              </a>
+            </li>
+            <li>
+              <a 
+                id="materials-info" 
+                className={matTab}
+                href="#" 
+                onClick={this.changeCurrentStep.bind(this)}>
+                Materials & Care
+              </a>
+            </li>
           </ul>
         </div>
         <div className="product-info-body">
