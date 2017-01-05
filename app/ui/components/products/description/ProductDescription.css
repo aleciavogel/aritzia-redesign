@@ -52,7 +52,8 @@
 .prices {
   font-size: 1.6em;
   font-weight: 600;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .reg-price {
