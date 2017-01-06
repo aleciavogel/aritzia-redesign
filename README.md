@@ -1,6 +1,8 @@
 # Aritzia Product Page Redesign
 
-View a working prototype here (best viewed on Google Chrome with a browser-width of at least 975px)
+View a working prototype on [Github Pages](https://aleciavogel.github.io/aritzia-redesign/) (best viewed on Google Chrome with a browser-width of at least 975px)
+
+The page I redesigned can be found [here](http://www.aritzia.com/en/product/faretta-sweater/62947.html?dwvar_62947_color=1274). 
 
 ![My version of the site](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/myfaretta.png?raw=true)
 
