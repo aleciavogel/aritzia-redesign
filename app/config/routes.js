@@ -9,7 +9,7 @@ var ProductContainer = require('../ui/containers/ProductContainer.js');
 
 routes = (
   <Router history={browserHistory}>
-    <Route path='/' component={Main}>
+    <Route path='/aritzia-redesign/' component={Main}>
       <IndexRoute component={ProductContainer} />
     </Route>
   </Router>
