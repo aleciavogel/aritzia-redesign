@@ -4,8 +4,9 @@ var Faker = require('faker');
 var moment = require('moment');
 const $ = require('jquery/dist/jquery.min.js');
 
-var Header = require('./Header');
+var Header = require('./Header.js');
 var Footer = require('./Footer.js');
+var ProductContainer = require('../../containers/ProductContainer.js');
 
 require('./Main.css');
 require('./cssreset.css');
@@ -37,7 +38,7 @@ class Main extends Component {
       <div className='main-container'>
         <Header />
         {this.state.showCoupon && <SurpriseCoupon />}
-        {this.props.children}
+        <ProductContainer />
         <Footer />
       </div>      
     )
