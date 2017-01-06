@@ -57,4 +57,4 @@ After studying ReactJs for the last two weeks of 2016, I thought this task would
 * The fixed header that appears when you scroll down has not been implemented, mostly due to constraints on time. Same with share buttons and "What she's wearing".
 * **Finally, my favourite feature:** If you keep refreshing the page, there's a 1 in 5 chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 10% off of your total purchase (including sale and clearance). One of the reasons I included this was because of the [Lucky Loyalty Effect](http://coglode.com/gems/lucky-loyalty-effect) article from 'Cognitive Lode'.
 
-![Alt Text](https://github.com/aleciavogel/aritzia-redesign/app/public/images/couponcode.png)
+![Alt Text](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/couponcode.png?raw=true)
