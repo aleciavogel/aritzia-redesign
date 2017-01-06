@@ -36,6 +36,8 @@ Another issue I encountered was how difficult it was initially to determine the 
 On products such as the [La Riviere T-Shirt](http://www.aritzia.com/en/product/la-rivi%C3%A8re-t-shirt/61215.html?dwvar_61215_color=160), some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
 
 
+
+
 ### Reviews 
 
 Simply put, there is no review system in place. As an avid online shopper, I rely on unbiased customer reviews to decide whether I should buy an item that I won't be able to see in person until after it's purchased and shipped to my address.
@@ -54,3 +56,5 @@ After studying ReactJs for the last two weeks of 2016, I thought this task would
 * I've added easing transitions to all hyperlinks on the page (including the header and footer).
 * The fixed header that appears when you scroll down has not been implemented, mostly due to constraints on time. Same with share buttons and "What she's wearing".
 * **Finally, my favourite feature:** If you keep refreshing the page, there's a 1 in 5 chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 10% off of your total purchase (including sale and clearance). One of the reasons I included this was because of the [Lucky Loyalty Effect](http://coglode.com/gems/lucky-loyalty-effect) article from 'Cognitive Lode'.
+
+![Alt Text](https://github.com/aleciavogel/aritzia-redesign/app/public/images/couponcode.png)
