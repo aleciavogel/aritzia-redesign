@@ -2,7 +2,7 @@
 
 View a working prototype here (best viewed on Google Chrome with a browser-width of at least 975px)
 
-### Mission
+## Mission
 
 I was recently assigned the task of identifying an objection that a shopper might encounter at any point throughout the shopping experience on www.aritzia.com. I had to theorize how I could potentially overcome such an obstacle and then create a message that would be shown to the shopper to persuade them to complete the purchase.
 
@@ -15,7 +15,7 @@ While exploring their online checkout process, I identified several elements tha
 
 Since this was supposed to be a short challenge, I narrowed it down to the product page and decided to focus on the desktop view.
 
-#### The Gallery & Product Overview
+### The Gallery & Product Overview
 
 The entire left side of the product page serves as a gallery of images for the item of clothing. You need to scroll down in order to view every image, unless you hover over the navigation dots on the left. In order to keep the product's description in view while you browse the images, the developer used some JavaScript to fix the right side of the page so it stays in place as you scroll. This becomes a problem if any one of the following occurs:
 
@@ -29,7 +29,7 @@ In these cases, part of the Product Description will move out of view and you ha
 <Screenshot will go here>
 
 
-#### Size & Colour Selection
+### Size & Colour Selection
 
 Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You can still hover over and select sizes that are out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
 
@@ -38,7 +38,7 @@ On products such as the La Reviere T-Shirt, some of the alerts for sold out size
 <Screenshot will go here>
 
 
-#### Reviews 
+### Reviews 
 
 Simply put, there is no review system in place. As an avid online shopper, I rely on unbiased customer reviews to decide whether I should buy an item that I won't be able to see in person until after it's purchased and shipped to my address.
 
