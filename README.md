@@ -37,7 +37,7 @@ In these cases, part of the Product Description will move out of view and you ha
 
 Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You can still hover over and select sizes that are out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
 
-On products such as the [La Riviere T-Shirt](http://www.aritzia.com/en/product/la-rivi%C3%A8re-t-shirt/61215.html?dwvar_61215_color=160), some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
+On products such as the [La Riviere T-Shirt](http://www.aritzia.com/en/product/la-rivi%C3%A8re-t-shirt/61215.html?dwvar_61215_color=160), some of the alerts for sold out sizes are inconsistent with the actual state of the product. Sometimes they say "Only a few left in this colour" even though the colour is actually completely sold out.
 
 ![Inconsistant state](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/riviere01.png?raw=true)
 
@@ -53,14 +53,14 @@ Simply put, there is no review system in place. As an avid online shopper, I rel
 
 After studying ReactJs for the last two weeks of 2016, I thought this task would be a wonderful opportunity for me to apply my knowledge of the framework in order to present a working prototype of my design concept. Thus, you're reading this report as a README on Github and not as a PDF exported from Sketch.
 
-* I completely redesigned the gallery, adding a fading transition every time a new thumbnail is selected.
-* I moved the "Designer's Notes" section so it's now at the top of the page along with the price and product title.
-* Reviews are simulated at the bottom of the product page. I couldn't decide on where to position the average product rating (when it was placed near the product's title and price, it made everything appear up there appear too cluttered), so I've left it out for now.
+* I completely redesigned the gallery, adding a cross-fade transition every time a new thumbnail is selected.
+* I moved the "Designer's Notes" section so it's now at the top of the page, directly below the price and product title.
+* Reviews are simulated at the bottom of the product page. I couldn't decide on where to position the average product rating (when it was placed near the product's title and price, it made everything up there appear too cluttered), so I've left it out for now.
 * A quantity selection was added, similar to the one displayed on the Victoria Secret website.
 * The red alertbox that displays when a size is low or out of stock was replaced by some different copy. Within the copy, I've included a link that would open a modal window to enter your e-mail and be notified when a specific size of a product is back in stock.
 * I've combined "Size & Fit" and "Materials & Care" into a single div that is displayed on a different tab than the reviews at the bottom of the page.
 * I've added easing transitions to all hyperlinks on the page (including the header and footer).
 * The fixed header that appears when you scroll down has not been implemented, mostly due to constraints on time. Same with share buttons and "What she's wearing".
-* **Finally, my favourite feature:** If you keep refreshing the page, there's a 1 in 5 chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 10% off of your total purchase (including sale and clearance). One of the reasons I included this was because of the [Lucky Loyalty Effect](http://coglode.com/gems/lucky-loyalty-effect) article from 'Cognitive Lode'.
+* **Finally, my favourite feature:** If you keep refreshing the page, there's a 1 in 5 chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 20% off of your total purchase (including sale and clearance). One of the reasons I included this was because of the [Lucky Loyalty Effect](http://coglode.com/gems/lucky-loyalty-effect) that I learned about during my initial research on how to tackle this project. The copy is a tad cheesy, but I'm a developer and designer.
 
 ![Random Coupon Code](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/couponcode.png?raw=true)
