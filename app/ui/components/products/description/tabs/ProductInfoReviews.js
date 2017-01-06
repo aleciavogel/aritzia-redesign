@@ -1,38 +1,56 @@
 var React = require('react');
 var Component = React.Component;
-
+var axios = require('axios');
 var moment = require('moment');
 var _ = require('lodash');
-var faker = require('faker');
+var Faker = require('faker');
 
-require('./ProductInfoReviews.css')
+require('./ProductInfoReviews.css');
+
+var ProductReviewStars = require('./ProductReviewStars.js');
 
 class ProductInfoReviews extends Component {
   constructor(props) {
     super(props);
+    
+    this.state = {
+      reviews: []
+    }
+  }
+  
+  componentWillMount() {
+    axios.get('https://randomuser.me/api/?results=10&gender=female', {responseType: 'json'})
+      .then( (response) => {
+        this.setState({
+          reviews: response.data.results
+        });
+      });   
   }
   
   renderReviews() {
-    let reviews = [];
     let i = 0;
-    _.times(10, () => {
-      reviews.push({
-        firstName: faker.name.firstName(1),
-        lastName: faker.name.lastName(),
-        date: faker.date.past(),
-        avatar: faker.image.avatar()
-      });
-    });
+    let reviews = [];
+    
+    console.log(this.state.reviews);
         
-    return reviews.map( (review) => {
+    return this.state.reviews.map( (review) => {
       i++
-      let datePosted = moment(review.date).fromNow();
+      const reviewDate = moment(Faker.date.past()).fromNow();
+      const reviewContent = Faker.lorem.sentences();
+      
       return (
         <li key={i}>
-          <div className="avatar"><img src={review.avatar} /></div>
-          <div className="author-info">
-            <span>{review.firstName} {review.lastName}</span> <span>{datePosted}</span>
-          </div>
+          <div className="avatar"><img src={review.picture.medium} /></div>
+          <div className="review-body">
+            <div className="author-info">
+              <span className="author-name">{review.name.first} {review.name.last}</span>
+              <ProductReviewStars />
+            </div>
+            <div className="author-review">
+              {reviewContent}
+            </div>
+            <div className="author-date">{reviewDate}</div>
+          </div>  
         </li>
       );
     });
@@ -40,8 +58,7 @@ class ProductInfoReviews extends Component {
   
   render() {
     return (     
-      <div className="reviews-body">
-        Reviews
+      <div className="reviews-list">
         <ul>
           {this.renderReviews()}
         </ul>

@@ -1,18 +1,3 @@
-.reviews-body ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.reviews-body ul li {
-  overflow: hidden;
-  clear: both;
-  display: block;
-  float: none;
-  height: 110px;
-  padding: 0;
-  box-sizing: border-box;
-}
 .avatar {
   border: solid 3px rgba(0, 0, 0, 0.2);
   display: inline-block;
@@ -20,6 +5,7 @@
   overflow: hidden;
   width: 100px;
   height: 100px;
+  float: left;
 }
 
 .avatar img {
@@ -31,6 +17,44 @@
 .author-info {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.author-info .author-name {
+  text-transform: capitalize;
+}
+
+.reviews-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews-list li .author-review {
   width: calc(100% - 110px);
+  display: inline-block;
+}
+
+.reviews-list li {
+  display: block;
+  overflow: hidden;
+}
+
+.review-body {
   float: right;
+  width: calc(100% - 110px);
+}
+
+.review-stars {
+  height: 15px;
+}
+
+.review-stars svg {
+  display: inline-block;
+  height: 100%;
+  fill: #bbb;
+}
+
+.review-stars svg.filled-star {
+  fill: #555 !important;
 }
