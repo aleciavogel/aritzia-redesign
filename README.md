@@ -33,9 +33,7 @@ In these cases, part of the Product Description will move out of view and you ha
 
 Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You can still hover over and select sizes that are out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
 
-On products such as the La Reviere T-Shirt, some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
-
-<Screenshot will go here>
+On products such as the [La Riviere T-Shirt](http://www.aritzia.com/en/product/la-rivi%C3%A8re-t-shirt/61215.html?dwvar_61215_color=160), some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
 
 
 ### Reviews 
