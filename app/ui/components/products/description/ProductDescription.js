@@ -62,14 +62,13 @@ class ProductDescription extends Component {
     return (
       <div className="product-description">
         <div className="product-intro">
-          <a href="#" className="product-collection" style={{'display': 'block'}}>{this.props.product.collection}</a>
-          <h1 style={{'clear': 'none', 'width': 'auto', 'display': 'inline-block'}}>
+          <a href="#" className="product-collection">{this.props.product.collection}</a>
+          <h1>
             {this.props.product.name}
           </h1>
-          <div className="prices" style={{'float': 'right', 'display': 'inlineBlock', 'marginTop': 8, 'marginBottom': -8}}>
+          <div className="prices">
             <span className="reg-price">${this.props.product.regPrice}</span> <span className="sale-price">${this.props.product.salePrice}</span>
           </div>
-          <ProductReviewStars rating="4.0" />
           <p className="description">
             {this.props.product.notes.designer}
           </p>

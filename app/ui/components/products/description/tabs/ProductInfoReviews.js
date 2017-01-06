@@ -19,7 +19,7 @@ class ProductInfoReviews extends Component {
   }
   
   componentWillMount() {
-    axios.get('https://randomuser.me/api/?results=10&gender=female', {responseType: 'json'})
+    axios.get('https://randomuser.me/api/?results=6&gender=female', {responseType: 'json'})
       .then( (response) => {
         this.setState({
           reviews: response.data.results
@@ -30,8 +30,6 @@ class ProductInfoReviews extends Component {
   renderReviews() {
     let i = 0;
     let reviews = [];
-    
-    console.log(this.state.reviews);
         
     return this.state.reviews.map( (review) => {
       i++

@@ -1,5 +1,5 @@
 .avatar {
-  border: solid 3px rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(0, 0, 0, 0.2);
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
@@ -18,35 +18,65 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 .author-info .author-name {
   text-transform: capitalize;
+  font-weight: 600;
+  color: #222;
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
 
 .reviews-list ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .reviews-list li .author-review {
-  width: calc(100% - 110px);
+  width: 100%;
   display: inline-block;
 }
 
 .reviews-list li {
-  display: block;
   overflow: hidden;
+  padding: 0;
+  margin: 0px 20px 40px;
+  width: calc(50% - 40px);
 }
 
 .review-body {
   float: right;
   width: calc(100% - 110px);
+  box-sizing: border-box;
+  padding: 5px 20px 0px;
+}
+
+.review-body .author-review {
+  color: #444;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 8px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+}
+
+.author-date {
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #999;
+  letter-spacing: 0.05em;
 }
 
 .review-stars {
   height: 15px;
+  margin-top: 1px;
 }
 
 .review-stars svg {

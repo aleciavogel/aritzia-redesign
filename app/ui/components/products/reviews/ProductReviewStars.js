@@ -35,12 +35,6 @@ class ProductReviewStars extends Component {
           </svg> 
           <span className="text">{this.props.rating}</span>
         </div>
-        <div>
-          <span className="ar-icon arrow-right"></span><a href="#" className="text link">143 Reviews</a> 
-        </div>
-        <div>
-          <span className="ar-icon arrow-right"></span><a href="#" className="text">Write a Review</a>
-        </div>
       </div>
     );
   }

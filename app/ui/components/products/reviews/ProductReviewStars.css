@@ -1,14 +1,13 @@
 .rating-stars {
-  width: 100%;
+  width: auto;
   height: 15px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
+  float: right;
+  display: inline-block;
+  margin-top: 1px;
 }
 
 .rating-stars div {
   height: 15px;
-  display: flex-item;
   width: auto;
 }
 
@@ -29,26 +28,4 @@
   display: inline-block;
   margin-left: 3px;
   color: #222;
-}
-
-.rating-stars a.text {
-  cursor: pointer;
-  margin-bottom: -1px;
-  padding-bottom: 1px;
-  border-bottom: solid 1px #555;
-  color: #aaa;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.rating-stars a.text:hover {
-  color: #222;
-  border-bottom: solid 1px #222;
-}
-
-.rating-stars .arrow-right {
-  opacity: 0.4;
-  background-position: -11px -533px;
-  height: 16px;
-  width: 15px;
 }

@@ -1,7 +1,7 @@
 var React = require('react');
 var Component = React.Component;
 
-class ProductInfoMaterial extends Component {
+class ProductInfoLook extends Component {
   constructor(props) {
     super(props);
   }
@@ -9,10 +9,10 @@ class ProductInfoMaterial extends Component {
   render() {
     return (     
       <div>
-        Materials &amp; Care
+        Complete Your Look
       </div>
     );
   }
 }
 
-module.exports = ProductInfoMaterial;
+module.exports = ProductInfoLook;

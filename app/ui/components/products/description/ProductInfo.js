@@ -10,7 +10,7 @@ class ProductInfo extends Component {
     super(props);
     
     this.state = {
-      step: 1,
+      step: 2,
     }
   }
   
@@ -68,18 +68,18 @@ class ProductInfo extends Component {
             </li>
             <li>
               <a 
-                id="materials-info" 
+                id="complete-your-look" 
                 className={matTab}
                 href="#" 
                 onClick={this.changeCurrentStep.bind(this)}>
-                Materials & Care
+                Complete Your Look
               </a>
             </li>
           </ul>
         </div>
         <div className="product-info-body">
           <div className="product-inner-wrapper">
-            <ProductInfoBody openTab={this.state.step} />
+            <ProductInfoBody product={this.props.product} openTab={this.state.step} />
           </div>
         </div>
       </div>

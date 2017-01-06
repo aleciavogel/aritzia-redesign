@@ -52,8 +52,7 @@
 .prices {
   font-size: 1.6em;
   font-weight: 600;
-  margin-bottom: 10px;
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .reg-price {
@@ -71,5 +70,5 @@
 .description {
   font-weight: 300;
   letter-spacing: .03em;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }

@@ -3,7 +3,7 @@ var Component = React.Component;
 
 var ProductInfoReviews = require('./tabs/ProductInfoReviews.js');
 var ProductInfoSize = require('./tabs/ProductInfoSize.js');
-var ProductInfoMaterial = require('./tabs/ProductInfoMaterial.js');
+var ProductInfoLook = require('./tabs/ProductInfoLook.js');
 
 class ProductInfoBody extends Component {
   constructor(props) {
@@ -15,9 +15,9 @@ class ProductInfoBody extends Component {
       case 1:
         return <ProductInfoReviews />
       case 2:
-        return <ProductInfoSize />
+        return <ProductInfoSize notes={this.props.product.notes} />
       case 3:
-        return <ProductInfoMaterial />
+        return <ProductInfoLook/>
     }
   }
 }

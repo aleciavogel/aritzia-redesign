@@ -113,18 +113,12 @@ const product = {
   salePrice: '118',
   notes: {
     designer: 'Cozy Italian wool, meet the cold shoulder! This sweater is made with a rib-knit collar, so it hugs your shoulders and stays in place.',
-    fit: 'slim',
-    sizing: true,
+    fit: 'Slim — streamlined to fit close to the body',
+    sizing: 'Fits true to size. Take your normal size',
     model: 'Model is 180/5\'9 wearing a size S',
     materials: {
         origin: 'Yarn from Italy',
-        content: [
-          '38% polyamide',
-          '26% acrylic',
-          '25% alpaca',
-          '10% wool',
-          '1% elastane'
-        ],
+        content: '38% polyamide, 26% acrylic, 25% alpaca, 10% wool, 1% elastane',
         care: 'Hand wash',
         imported: true
     }
@@ -200,7 +194,7 @@ class ProductContainer extends Component {
             product={product} />
         </div>
         <div className="product-bottom">
-          <ProductInfo />
+          <ProductInfo product={product} />
         </div>
       </div>
     );

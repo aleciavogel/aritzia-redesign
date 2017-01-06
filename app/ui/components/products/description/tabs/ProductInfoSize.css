@@ -1,0 +1,45 @@
+.size-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.size-body div {
+  max-width: 40%;
+}
+
+.size-body span.column-title {
+  font-weight: 600;
+  color: rgba(0,0,0,.9);;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.size-body ul li span {
+  font-weight: 600;
+  padding-bottom: 0px;
+  margin-bottom: -3px;
+  margin-right: 3px;
+  border-bottom: solid 1px #222;
+}
+
+.size-body ul {
+  padding: 15px;
+  margin: 0;
+  list-style: disc outside none;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  font-weight: 400px;
+  text-align: left;
+  text-transform: none;
+}
+
+.size-body ul li {
+  display: list-item;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 2em;
+}
