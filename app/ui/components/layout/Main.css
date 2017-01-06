@@ -13,7 +13,7 @@ footer {
 .ar-icon {
   overflow: hidden;
   display: inline-block;
-  background: url('http://localhost:8080/app/public/images/interface-sprite.png');
+  background: url('https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/interface-sprite.png?raw=true');
   background-repeat: no-repeat;
   text-indent: -99999px;
 }
