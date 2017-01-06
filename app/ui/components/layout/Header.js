@@ -30,7 +30,7 @@ class Header extends Component {
           </div>
         </div>
         <div className="logo">
-          <img src="http://localhost:8080/app/public/images/aritzia_logo.gif" />
+          <img src="https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/aritzia_logo.gif?raw=true" />
         </div>
         <nav>
           <ul>
