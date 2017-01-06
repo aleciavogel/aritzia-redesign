@@ -60,6 +60,9 @@ class ProductInfoReviews extends Component {
         <ul>
           {this.renderReviews()}
         </ul>
+        <div id="reviews-options">
+          <button className="left">Load More</button><button>Write a Review</button>
+        </div>
       </div>
     );
   }

@@ -10,7 +10,7 @@ class ProductInfo extends Component {
     super(props);
     
     this.state = {
-      step: 2,
+      step: 1,
     }
   }
   
@@ -22,10 +22,8 @@ class ProductInfo extends Component {
     
     if(e.target.id === 'reviews-info') {
       newStep = 1;
-    } else if(e.target.id === 'size-info') {
-      newStep = 2;
     } else {
-      newStep = 3;
+      newStep = 2;
     }
     
     this.setState({
