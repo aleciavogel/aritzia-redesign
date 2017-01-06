@@ -1,0 +1,36 @@
+.reviews-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews-body ul li {
+  overflow: hidden;
+  clear: both;
+  display: block;
+  float: none;
+  height: 110px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.avatar {
+  border: solid 3px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.author-info {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 110px);
+  float: right;
+}

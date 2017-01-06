@@ -10,7 +10,11 @@
   "author": "Alecia Vogel <aleciahh@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "faker": "^3.1.0",
     "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "momentjs": "^2.0.0",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^15.4.1",

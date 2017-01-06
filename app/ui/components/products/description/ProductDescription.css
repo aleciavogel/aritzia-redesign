@@ -3,7 +3,7 @@
   max-width: 550px;
   display: block;
   float: left;
-  padding: 80px 60px 0px 50px    ;
+  padding: 50px 60px 0px 50px    ;
   box-sizing: border-box;
 }
 
@@ -71,5 +71,5 @@
 .description {
   font-weight: 300;
   letter-spacing: .03em;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }

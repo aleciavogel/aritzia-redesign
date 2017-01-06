@@ -73,7 +73,6 @@ class ProductDescription extends Component {
           <p className="description">
             {this.props.product.notes.designer}
           </p>
-          
         </div>
         <ProductColours 
           colours={this.props.product.colours} 
