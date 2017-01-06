@@ -26,7 +26,7 @@ The entire left side of the product page serves as a gallery of images for the i
 
 In these cases, part of the Product Description will move out of view and you have to scroll up in order to view it again. Even on a 1080 x 1920 computer monitor, I cannot actually read the "Materials & Care" section on this page while the "Size & Fit" section is also toggled. That is, until I scroll all the way to the bottom... and then it overlaps with the "Shipping | Returns & Exchanges | Contact Us Now" section.
 
-<Screenshot will go here>
+![Overlapping divs](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/riviere02.png?raw=true)
 
 
 ### Size & Colour Selection
@@ -34,6 +34,8 @@ In these cases, part of the Product Description will move out of view and you ha
 Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You can still hover over and select sizes that are out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
 
 On products such as the [La Riviere T-Shirt](http://www.aritzia.com/en/product/la-rivi%C3%A8re-t-shirt/61215.html?dwvar_61215_color=160), some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
+
+![Inconsistant state](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/riviere01.png?raw=true)
 
 
 
@@ -57,4 +59,4 @@ After studying ReactJs for the last two weeks of 2016, I thought this task would
 * The fixed header that appears when you scroll down has not been implemented, mostly due to constraints on time. Same with share buttons and "What she's wearing".
 * **Finally, my favourite feature:** If you keep refreshing the page, there's a 1 in 5 chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 10% off of your total purchase (including sale and clearance). One of the reasons I included this was because of the [Lucky Loyalty Effect](http://coglode.com/gems/lucky-loyalty-effect) article from 'Cognitive Lode'.
 
-![Alt Text](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/couponcode.png?raw=true)
+![Random Coupon Code](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/couponcode.png?raw=true)
