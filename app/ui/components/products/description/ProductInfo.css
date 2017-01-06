@@ -69,3 +69,7 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+.product-info-body .product-inner-wrapper {
+  max-width: 1070px;
+}

@@ -63,16 +63,7 @@ class ProductInfo extends Component {
                 className={sizeTab} 
                 href="#" 
                 onClick={this.changeCurrentStep.bind(this)}>
-                Size & Fit
-              </a>
-            </li>
-            <li>
-              <a 
-                id="complete-your-look" 
-                className={matTab}
-                href="#" 
-                onClick={this.changeCurrentStep.bind(this)}>
-                Complete Your Look
+                Sizing &amp; Materials
               </a>
             </li>
           </ul>

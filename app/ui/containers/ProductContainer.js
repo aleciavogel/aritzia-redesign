@@ -195,6 +195,19 @@ class ProductContainer extends Component {
         </div>
         <div className="product-bottom">
           <ProductInfo product={product} />
+          <div className="info-links">
+            <ul>
+              <li>
+                <a href="#">Shipping</a>
+              </li>
+              <li>
+                <a href="#">Returns &amp; Exchanges</a>
+              </li>
+              <li>
+                <a href="#">Contact Us Now</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );

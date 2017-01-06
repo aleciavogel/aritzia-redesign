@@ -17,3 +17,40 @@
 .product-top {
   margin-bottom: 40px;
 }
+
+.product-bottom .info-links {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto 1000px;
+}
+
+.product-bottom .info-links ul {
+  list-style-type: none;
+  padding: 40px 0px;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+}
+
+.product-bottom .info-links ul li {
+  display: inline-block;
+  margin-right: 50px;
+  line-height: 0.78em;
+}
+
+.product-bottom .info-links ul li:last-child {
+  margin-right: 0;
+}
+
+.product-bottom .info-links ul li a {
+  color: #222;
+  outline: medium none;
+  letter-spacing: 0.05em;
+  font-size: 0.78em;
+  line-height: 1;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-bottom .info-links ul li a:hover {
+  color: #888;
+}

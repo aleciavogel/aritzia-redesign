@@ -11,7 +11,7 @@ class ProductInfoSize extends Component {
   render() {
     return (     
       <div className="size-body">
-        <div class="size">
+        <div className="size">
           <span className="column-title">Size &amp; Fit</span>
           <ul>
             <li><span>Fit:</span> {this.props.notes.fit}</li>
@@ -19,7 +19,7 @@ class ProductInfoSize extends Component {
             <li>{this.props.notes.model}</li>
           </ul>
         </div>
-        <div class="materials">
+        <div className="materials">
           <span className="column-title">Materials &amp; Care</span>
           <ul>
             <li><span>Origin:</span> {this.props.notes.materials.origin}</li>
