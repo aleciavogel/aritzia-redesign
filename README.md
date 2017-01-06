@@ -2,6 +2,8 @@
 
 View a working prototype here (best viewed on Google Chrome with a browser-width of at least 975px)
 
+![My version of the site](https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/myfaretta.png?raw=true)
+
 ## Mission
 
 I was recently assigned the task of identifying an objection that a shopper might encounter at any point throughout the shopping experience on www.aritzia.com. I had to theorize how I could potentially overcome such an obstacle and then create a message that would be shown to the shopper to persuade them to complete the purchase.
