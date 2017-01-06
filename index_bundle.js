@@ -25397,7 +25397,7 @@
 	      React.createElement(
 	        'div',
 	        { className: 'logo' },
-	        React.createElement('img', { src: 'http://localhost:8080/app/public/images/aritzia_logo.gif' })
+	        React.createElement('img', { src: 'https://github.com/aleciavogel/aritzia-redesign/blob/master/app/public/images/aritzia_logo.gif?raw=true' })
 	      ),
 	      React.createElement(
 	        'nav',
