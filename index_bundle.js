@@ -30886,7 +30886,7 @@
 	  { history: browserHistory },
 	  React.createElement(
 	    Route,
-	    { path: '/', component: Main },
+	    { path: '/aritzia-redesign/', component: Main },
 	    React.createElement(IndexRoute, { component: ProductContainer })
 	  )
 	);
