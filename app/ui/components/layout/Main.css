@@ -42,3 +42,32 @@ footer {
   opacity: 0;
   transition: opacity 400ms ease-in-out;
 }
+
+
+/* Discount Code */
+#free-code {
+  background: #a0dd9b;
+  text-align: center;
+}
+
+#free-code .free-code-wrapper {
+  width: 100%;
+  max-width: 950px;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 0.03em;
+}
+
+#free-code .free-code-wrapper h2 {
+  margin: 0px 0px 10px;
+}
+
+#free-code .free-code-wrapper p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#end-of-code {
+  display: inline-block;
+  margin-top: 40px;
+}

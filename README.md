@@ -1,19 +1,23 @@
 # Aritzia Product Page Redesign
 
+View a working prototype here (best viewed on Google Chrome with a browser-width of at least 975px)
+
 ### Mission
 
 I was recently assigned the task of identifying an objection that a shopper might encounter at any point throughout the shopping experience on www.aritzia.com. I had to theorize how I could potentially overcome such an obstacle and then create a message that would be shown to the shopper to persuade them to complete the purchase.
 
-I was provided with links to articles and videos about persuasion and consumer psychology to guide me for this project.
+Links to articles and videos about persuasion and consumer psychology were also provided to guide me for this project.
 
 ## Analysis
-Aritzia is a Canadian retailer whose local stores I frequent whenever I go shopping but I've never actually been on their website. While exploring their online checkout process, I identified several elements that I thought could be improved. For example, the mobile experience isn't the greatest. I also noticed that certain pages like their "About" page were beautifully designed with fading transitions and pretty solid copy, but other pages (such as those associated with the online shopping process) were frustrating to use and didn't feel cohesive with the rest of the website's design.
+Aritzia is a Canadian retailer whose stores I frequent whenever I go shopping. Curiously enough, I've never actually been on their website before this task was assigned. 
 
-Initially, I wanted to tackle both the product page and the cart/checkout page plus design everything to be mobile-first and responsive. Since this was supposed to be a short challenge, I narrowed it down to the product page and decided to focus on the desktop view to make my life a little easier.
+While exploring their online checkout process, I identified several elements that I thought could be improved. For one thing, the website's mobile-friendliness is questionable at best. I also noticed that certain pages like their "About" page were beautifully designed with fading transitions and solid copy, but other pages (such as those associated with the online shopping process) were a tad frustrating to use and didn't feel cohesive with the rest of the website's design (they must use some sort of out-of-the-box CMS to manage their products).
+
+Since this was supposed to be a short challenge, I narrowed it down to the product page and decided to focus on the desktop view.
 
 #### The Gallery & Product Overview
 
-The entire left side of the product page serves as a gallery of images for the item of clothing. You need to scroll down in order to view every image, apart from hovering over the dots on the left that serve as navigation for the gallery. In order to keep the product's description in view while you browse the images, the developer used some JavaScript to fix the right side of the page so it stays in place as you scroll. This becomes a problem if any one of the following occurs:
+The entire left side of the product page serves as a gallery of images for the item of clothing. You need to scroll down in order to view every image, unless you hover over the navigation dots on the left. In order to keep the product's description in view while you browse the images, the developer used some JavaScript to fix the right side of the page so it stays in place as you scroll. This becomes a problem if any one of the following occurs:
 
 * The "Designer's Notes" section is longer than 1-2 sentences
 * An alert about an unavailable size/colour is being displayed
@@ -27,9 +31,9 @@ In these cases, part of the Product Description will move out of view and you ha
 
 #### Size & Colour Selection
 
-Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You could still hover over and select sizes out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
+Another issue I encountered was how difficult it was initially to determine the states of different sizes on popular items. I clicked on a sweater I liked, but almost all of its sizes for my favourite colour were sold out. The sold out sizes had the same background and border colours as the sizes that were still in stock - the only thing that differed was the font colour. You can still hover over and select sizes that are out of stock. Selecting an unavailable size opens a red alert box and disables the "Add to bag" button.
 
-On products such as the La Reviere T-Shirt, once you click on a sold out colour (which has a diagonal slash through the middle to indicate that it is sold out), some of the alerts for sold out sizes are inconsistent, sometimes saying "Only a few left in this colour" even though the colour itself is unavailable.
+On products such as the La Reviere T-Shirt, some of the alerts for sold out sizes are inconsistent. Sometimes they say "Only a few left in this colour" even though the colour is actually unavailable to be purchased.
 
 <Screenshot will go here>
 
@@ -42,3 +46,13 @@ Simply put, there is no review system in place. As an avid online shopper, I rel
 ## My Solution
 
 After studying ReactJs for the last two weeks of 2016, I thought this task would be a wonderful opportunity for me to apply my knowledge of the framework in order to present a working prototype of my design concept. Thus, you're reading this report as a README on Github and not as a PDF exported from Sketch.
+
+* I completely redesigned the gallery, adding a fading transition every time a new thumbnail is selected.
+* I moved the "Designer's Notes" section so it's now at the top of the page along with the price and product title.
+* Reviews are simulated at the bottom of the product page. I couldn't decide on where to position the average product rating (when it was placed near the product's title and price, it made everything appear up there appear too cluttered), so I've left it out for now.
+* A quantity selection was added, similar to the one displayed on the Victoria Secret website.
+* The red alertbox that displays when a size is low or out of stock was replaced by some different copy. Within the copy, I've included a link that would open a modal window to enter your e-mail and be notified when a specific size of a product is back in stock.
+* I've combined "Size & Fit" and "Materials & Care" into a single div that is displayed on a different tab than the reviews at the bottom of the page.
+* I've added easing transitions to all hyperlinks on the page (including the header and footer).
+* The fixed header that appears when you scroll down has not been implemented, mostly due to constraints on time. Same with share buttons and "What she's wearing".
+* **Finally, my favourite feature:** If you keep refreshing the page, there's a chance that an alert at the top of the screen will appear, giving you a time-sensitive coupon for free shipping and 10% off of your total purchase (including sale and clearance).
